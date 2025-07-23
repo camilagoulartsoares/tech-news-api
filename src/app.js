@@ -9,4 +9,8 @@ app.use(express.json())
 
 app.use('/api/news', newsRoutes)
 
+app.get('/', (req, res) => {
+  res.send('API online!');
+});
+
 module.exports = app

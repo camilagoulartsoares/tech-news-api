@@ -14,19 +14,44 @@ const newsList = [
     date: '2025-07-22'
   },
   {
-    title: 'Google apresenta nova versão do Android 15',
-    content: 'O Android 15 chega com melhorias em privacidade, desempenho e novas APIs focadas em apps de IA generativa.',
-    date: '2025-07-20'
+    title: 'Apple apresenta novo chip M4 para Macs',
+    content: 'Durante o WWDC 2025, a Apple revelou o chip M4 com foco em desempenho gráfico e otimizações para inteligência artificial.',
+    date: '2025-07-17'
   },
   {
-    title: 'NVIDIA bate recorde de valor de mercado',
-    content: 'Com a crescente demanda por chips de IA, a NVIDIA ultrapassa marcas históricas e se consolida como uma das empresas mais valiosas do mundo.',
-    date: '2025-07-19'
+    title: 'Samsung revela Galaxy Z Fold 7 com bateria aprimorada',
+    content: 'A nova geração do dobrável da Samsung traz melhorias de bateria, nova dobradiça e suporte expandido para apps com IA.',
+    date: '2025-07-15'
   },
   {
-    title: 'Meta libera versão open source do Llama 3',
-    content: 'A Meta lançou o modelo de linguagem Llama 3 gratuitamente, com foco em aplicações seguras de IA em código aberto.',
-    date: '2025-07-18'
+    title: 'Amazon lança robô doméstico com Alexa integrada',
+    content: 'Chamado Astro 2, o novo robô inteligente da Amazon traz funções de segurança, assistência e integração total com casa conectada.',
+    date: '2025-07-14'
+  },
+  {
+    title: 'TikTok implementa sistema de IA para moderação em tempo real',
+    content: 'Com foco em segurança digital, o TikTok agora usa IA generativa para identificar e moderar conteúdo impróprio mais rapidamente.',
+    date: '2025-07-13'
+  },
+  {
+    title: 'Intel divulga roadmap com chips de 1.8nm até 2027',
+    content: 'A Intel revelou sua próxima geração de chips, prometendo avanços em consumo energético e desempenho para datacenters e PCs.',
+    date: '2025-07-12'
+  },
+  {
+    title: 'NVIDIA ultrapassa Apple em valor de mercado',
+    content: 'A NVIDIA se tornou a segunda empresa mais valiosa do mundo, impulsionada pela alta demanda por GPUs de IA.',
+    date: '2025-07-11'
+  },
+  {
+    title: 'Meta anuncia óculos de realidade mista com IA nativa',
+    content: 'A Meta revelou um novo dispositivo que combina RA com assistente pessoal baseado em IA, capaz de interagir com o ambiente.',
+    date: '2025-07-10'
+  },
+  {
+    title: 'Google testa nova IA para diagnósticos médicos',
+    content: 'O Google Health iniciou testes com uma IA voltada para diagnósticos clínicos em hospitais nos EUA e Reino Unido.',
+    date: '2025-07-09'
   }
 ];
 

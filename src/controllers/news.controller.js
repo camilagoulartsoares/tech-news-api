@@ -17,6 +17,7 @@ async function getNewsById(req, res) {
   res.json(newsItem)
 }
 
+
 async function createNews(req, res) {
   const { title, content, date } = req.body
 
@@ -25,15 +26,22 @@ async function createNews(req, res) {
   }
 
   await db.read()
+
   const newId = db.data.news.length > 0 ? db.data.news.at(-1).id + 1 : 1
 
-  const newArticle = { id: newId, title, content, date }
+  const newArticle = {
+    id: newId,
+    title,
+    content,
+    date
+  }
 
   db.data.news.push(newArticle)
-  await db.write()
+  await db.write() 
 
   res.status(201).json(newArticle)
 }
+
 
 async function updateNews(req, res) {
   await db.read()

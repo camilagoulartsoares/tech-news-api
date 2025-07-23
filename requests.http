@@ -1,15 +1,42 @@
-### Buscar todas as notícias
+### GET todas as notícias
 GET http://localhost:3000/api/news
 
-### Buscar uma notícia por ID
+
+### GET notícia por ID
 GET http://localhost:3000/api/news/1
 
-### Criar uma nova notícia
+
+### POST criar nova notícia
+### Teste 1
 POST http://localhost:3000/api/news
 Content-Type: application/json
 
 {
-  "title": "VSCode agora voa",
-  "content": "Extensões incríveis facilitam a vida dos devs",
-  "date": "2025-07-23"
+  "title": "Notícia A",
+  "content": "Teste de múltiplos envios",
+  "date": "2025-07-24"
 }
+
+### Teste 2
+POST http://localhost:3000/api/news
+Content-Type: application/json
+
+{
+  "title": "Notícia B",
+  "content": "Verificando se serão salvas juntas",
+  "date": "2025-07-24"
+}
+
+
+
+### PUT atualizar notícia
+PUT http://localhost:3000/api/news/1
+Content-Type: application/json
+
+{
+  "title": "Título atualizado via VSCode"
+}
+
+
+### DELETE remover notícia
+DELETE http://localhost:3000/api/news/1

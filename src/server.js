@@ -1,7 +1,10 @@
 const app = require('./app')
+const { initDB } = require('./db')
 
 const PORT = 3000
 
-app.listen(PORT, () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}`)
+initDB().then(() => {
+  app.listen(PORT, () => {
+    console.log(`Servidor rodando em http://localhost:${PORT}`)
+  })
 })

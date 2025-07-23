@@ -1,7 +1,17 @@
 const express = require('express')
 const router = express.Router()
-const { getAllNews } = require('../controllers/news.controller')
+const {
+  getAllNews,
+  getNewsById,
+  createNews,
+  updateNews,
+  deleteNews
+} = require('../controllers/news.controller')
 
 router.get('/', getAllNews)
+router.get('/:id', getNewsById)
+router.post('/', createNews)
+router.put('/:id', updateNews)
+router.delete('/:id', deleteNews)
 
 module.exports = router

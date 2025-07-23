@@ -1,0 +1,15 @@
+### Buscar todas as notícias
+GET http://localhost:3000/api/news
+
+### Buscar uma notícia por ID
+GET http://localhost:3000/api/news/1
+
+### Criar uma nova notícia
+POST http://localhost:3000/api/news
+Content-Type: application/json
+
+{
+  "title": "VSCode agora voa",
+  "content": "Extensões incríveis facilitam a vida dos devs",
+  "date": "2025-07-23"
+}

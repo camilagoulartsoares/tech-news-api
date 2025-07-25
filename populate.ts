@@ -1,9 +1,9 @@
-const axios = require('axios');
+import axios from 'axios';
+import { News } from './src/db';
 
 const BASE_URL = 'https://tech-news-api-nlji.onrender.com/api/news';
 
-
-const newsList = [
+const newsList: Omit<News, 'id'>[] = [
   {
     title: 'OpenAI lança GPT-5 com foco em raciocínio avançado',
     content: 'A OpenAI anunciou o GPT-5, com melhorias em raciocínio lógico, memória de longo prazo e segurança no uso corporativo.',
@@ -81,14 +81,13 @@ const newsList = [
   }
 ];
 
-
 async function populateNews() {
   try {
     for (const news of newsList) {
       const res = await axios.post(BASE_URL, news);
       console.log(`✅ Criada: ${res.data.title}`);
     }
-  } catch (error) {
+  } catch (error: any) {
     console.error('❌ Erro ao popular:', error.response?.data || error.message);
   }
 }

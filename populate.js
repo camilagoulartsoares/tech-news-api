@@ -2,6 +2,7 @@ const axios = require('axios');
 
 const BASE_URL = 'https://tech-news-api-nlji.onrender.com/api/news';
 
+
 const newsList = [
   {
     title: 'OpenAI lança GPT-5 com foco em raciocínio avançado',

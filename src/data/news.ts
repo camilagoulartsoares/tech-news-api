@@ -15,4 +15,18 @@ const mockNews: News[] = [
   }
 ];
 
+
+export const seedNews: Omit<News, 'id'>[] = [
+  {
+    title: 'OpenAI lança GPT-5 com foco em raciocínio avançado',
+    content: 'A OpenAI anunciou o GPT-5, com melhorias em raciocínio lógico, memória de longo prazo e segurança no uso corporativo.',
+    date: '2025-07-23'
+  },
+  {
+    title: 'Windows 12 é lançado com IA integrada',
+    content: 'A Microsoft apresentou o Windows 12 com copilotos de IA nativos, otimizando tarefas do dia a dia.',
+    date: '2025-07-22'
+  }
+];
+
 export default mockNews;
